@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/getBook.js"></script>
+</head>
+
+<body style="padding: 20px;">
+    <!-- 添加图书的panel面板 -->
+  
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">添加新图书</h3>
+        </div>
+        <div class="panel-body form-inline">
+
+            <div class="input-group">
+                <div class="input-group-addon">书名 </div>
+                <input type="text" class="form-control" id="iptBookname" placeholder="请输入书名">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">作者 </div>
+                <input type="text" class="form-control" id="iptAuthor" placeholder="请输入作者">
+            </div>
+            <div class="input-group">
+                <div class="input-group-addon">出版社 </div>
+                <input type="text" class="form-control" id="iptPublisher" placeholder="请输入出版社">
+            </div>
+            <button id="btnAdd" class="btn btn-primary">添加</button>
+        </div>
+    </div>
+
+   <!-- 图书表单 -->
+   
+   <table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>书名</th>
+            <th>作者</th>
+            <th>出版社</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody id="bookBody">
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+   </table>
+   
+
+</html>
